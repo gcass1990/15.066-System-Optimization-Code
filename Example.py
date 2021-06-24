@@ -45,3 +45,5 @@ except gp.GurobiError as e:
 
 except AttributeError:
     print('Encountered an attribute error')
+
+    #blah blah
