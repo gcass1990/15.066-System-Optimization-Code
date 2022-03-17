@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMpwirvzE3otWhDTp3uJuan",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/gcass1990/15.066-System-Optimization-Code/blob/main/ASHRAE_kaggle\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "wG5i1QWzXykR"
+      },
+      "outputs": [],
+      "source": [
+        "import pandas as pd\n",
+        "from sklearn.model_selection  import train_test_split\n",
+        "import numpy as np\n",
+        "from scipy.stats import norm\n",
+        "from scipy import stats, integrate\n",
+        "import matplotlib.pyplot as plt\n",
+        "import os\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## Reading in Data\n",
+        "ASHRAE_test = pd.read_csv('test.csv')\n",
+        "ASHRAE_train = pd.read_csv('train.csv')\n",
+        "weather_train = pd.read_csv('weather_train.csv')\n",
+        "building_meta = pd.read_csv('building_metadata.csv')\n",
+        "weather_test = pd.read_csv('weather_test.csv')\n"
+      ],
+      "metadata": {
+        "id": "FJbmYoziX3dS"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
